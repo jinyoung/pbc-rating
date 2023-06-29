@@ -11,8 +11,14 @@ import pbc.rating.RatingApplication;
 @Data
 public class Rating {
 
+    public Rating(){
+        sumOfRatings = 0L;
+        countOfRatings = 0L;
+        averageRate = 0;
+    }
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     private String topicId;
 
     private Integer averageRate;
